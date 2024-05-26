@@ -1,0 +1,14 @@
+/* 태그 */
+p{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+}
+/*클래스  */
+.infoButtonPart{
+    display: flex;
+    flex-direction: column;
+
+}

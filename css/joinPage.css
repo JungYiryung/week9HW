@@ -1,0 +1,104 @@
+/* 태그 */
+span{
+    color: red;
+    font-size:23px;
+}
+body{
+    background-color: #D1E3FF; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* body에 스타일주는거 x body 안에 main을 주고 main에 css줌 */
+label{
+    font-size: 23px;
+}
+input,tr,td{
+    margin: 0px;
+    padding: 0px;
+}
+/*global css로 옮겨 */
+
+/* 클래스 */
+.title{
+    font-size: 20pt;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputBox{
+    z-index: 0;
+    width: 700px;
+    background: white;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    z-index: 1;
+}
+
+.inputText{
+    z-index: 2;
+    margin: 5px;
+    width: 300px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px; 
+}
+.inputText::placeholder{
+    color: #BFBFBF;
+}
+
+.IDCheckButton{
+    background-color: #3F88FF;
+    border-radius: 10px;
+    color:#1b1d25;
+    border : 0;
+    height: 50px;
+    width: 100px;
+}
+.joinButton{
+    background-color: #3F88FF;
+    border-radius: 10px;
+    color:#1b1d25;
+    border : 0;
+    height: 50px;
+    width: 455px;
+    font-size: 20px;
+}
+
+/* 모달 */
+#modal {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+}
+.modal.show{
+    display: block;
+}
+.okModalBody{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100px;
+    height: 150px;
+    padding: 15px;
+}
+.noModalBody{
+    position: absolute;
+    background-color: #ffffff;
+    width: 100px;
+    height: 150px;
+    padding: 15px;
+}

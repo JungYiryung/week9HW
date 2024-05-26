@@ -1,0 +1,97 @@
+/* 태그 */
+body{
+    background-color: #D1E3FF; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    padding: 10px;
+}
+button{
+    background-color: #3F88FF;
+    border-radius: 2px;
+    color:#1b1d25;
+    border : 0;
+    height: 50px;
+}
+input{
+    font-size: 15pt;
+    margin: 0px;
+    padding: 0px;
+}
+/* 클래스 */
+.title{
+    width:60%;
+    font-size: 30pt;
+    color: #3F88FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBox{
+    /* position: relative; */
+    z-index: 0;
+    width: 500px;
+    background: #1b1d25;
+    border-radius: 30px;
+    background-color:rgba(255,255,255,0.5);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.form{
+    z-index: 1;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+} 
+.threeButton{
+    z-index:1;
+    display: flex;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+    width: 300px;
+    justify-content: space-between;
+}
+
+.inputText{
+    z-index: 2;
+    margin: 5px;
+    width: 300px;
+    height: 50px;
+    border:none;
+    border-radius: 10px;
+}
+.inputText::placeholder{
+    color: #BFBFBF;
+}
+.loginButton{
+    margin: 5px;
+    z-index: 2;
+    width: 300px;
+    height: 50px;
+    background-color: #3F88FF;
+    border-radius: 10px;
+    color: #1b1d25;
+    border : 0;
+}
+
+.IDsearchButton{
+    flex-basis: 20%;
+    border-radius: 10px;
+    margin-right : 5px;
+}
+.PWsearchButton{
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+.joinButton{
+    flex-basis: 30%;
+    border-radius: 10px;
+    margin-left : 5px;
+}
