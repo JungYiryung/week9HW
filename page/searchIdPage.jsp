@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./css/searchIdPage.css">
+    <link rel="stylesheet" type="text/css" href="../css/searchIdPage.css">
     <title>Calender</title>
 </head>
 <body>
@@ -12,18 +12,18 @@
     </div>
 
     <div class="inputBox">
-        <form  class="form" action="./action/searchIdAction.jsp">
+        <form  class="form" name="findIdInput" action="../action/searchIdAction.jsp">
             <div>
-                <input type="text" name="name" class="inputText" placeholder="이름">
+                <input type="text" id="name" name="nameValue" class="inputText" placeholder="이름">
             </div>
             <div>
-                <input type="text" name="phone" class="inputText" placeholder="전화번호">
+                <input type="text" id="phone" name="phoneValue" class="inputText" placeholder="전화번호">
             </div>
             <div>
-                <input type="submit" class="findIdButton" value="아이디찾기">
+                <input type="button" class="findIdButton" onclick="findIdExceptionEvent()" value="아이디찾기">
             </div>
         </form>
     </div>
-    <script src=""></script>
+    <script src="../js/searchIdPage.js"></script>
 
 </body>

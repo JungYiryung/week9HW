@@ -28,22 +28,19 @@ input,tr,td{
     justify-content: center;
 }
 .inputBox{
-    z-index: 0;
     width: 700px;
     background: white;
     border-radius: 30px;
-    background-color:rgba(255,255,255,0.5);
+    background-color:#E3EBF8;
     display:flex;
     align-items: center;
     justify-content: center;
 }
 
 .form{
-    z-index: 1;
 }
 
 .inputText{
-    z-index: 2;
     margin: 5px;
     width: 300px;
     height: 50px;
@@ -83,7 +80,7 @@ input,tr,td{
     display: none;
     justify-content: center;
     align-items: center;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0);
 }
 .modal.show{
     display: block;
