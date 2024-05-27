@@ -9,12 +9,12 @@
 
 <%
     // request.setCharacterEncoding("utf-8");
-    // String idValue = request.getParameter("id_value");
-    // String pwValue = request.getParameter("pw_value");
+    // String nameValue = request.getParameter("nameValue");
+    // String phoneValue = request.getParameter("phoneValue");
 
     // Class.forName("org.mariadb.jdbc.Driver");
     // Connection connect = DriverManager.getConnection("jdbc:mariadb://localhost:3306/homework","stageus","1234"); 
-    // String sql="SELECT * FROM member WHERE id = ?;";
+    // String sql="SELECT id FROM member WHERE  = ?;";
     // PreparedStatement query = connect.prepareStatement(sql);
     // query.setString(1, idValue);
     // //query.setString(2, idValue);
@@ -29,39 +29,23 @@
     <title>Document</title>
 </head>
 <body>
-    <%-- <p>아이디 : <%=idValue%></p>
     <%
         if(result.next())
-        {  
-            if(result.getString(3).equals(pwValue))
-
+        {
+            //아이디와 폰번호와 매치되는 비밀번호가 있으면 pwPrintSuccessPage.jsp로 이동
+            //이동시 아이디값전달
+            if()
             {
-                session.setAttribute("id",idValue);
+    %>
 
-    %>          
-            <script>  
-                var id;
-                alert("로그인 성공");
-                location.href="../page/Mainpage.jsp";
-            </script>
-    <%
+    <%        
+            }
+            else// 아이디와 폰번호와 매치되는 비밀번호가 없으면, 
+            //혹은 존재하는 아이디가 아니면 pwPrintFailPage.jsp로 이동
+            //이동시 아이디값전달 form형식으로
+            {
+
             }
         }
-        else
-        {
     %>
-            <script>
-                alert("로그인 실패")
-                history.go(-1);
-            </script>
-    <%
-        }
-        
-    %>
-
-    <%
-
-    %>
-     --%>
-
 </body>

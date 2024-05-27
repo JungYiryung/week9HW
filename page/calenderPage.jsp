@@ -22,7 +22,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/calenderCSS.css">
+    <link rel="stylesheet" type="text/css" href="../css/calender.css">
     <title>Calender</title>
 </head>
 <body>
@@ -43,30 +43,31 @@
 
     <div class="calenderPart">    
         <div>
-            <select  class="month">
-                <option value="one">1월</option>
-                <option value="two">2월</option>
-                <%-- js반복문 --%>
+            <select  id="month" onchange="selectMonth()">
             </select>
         </div>
-        <div>
-            <table>
-                <thead>
-                    <tr>
-                        <th>월</th>
-                        <th>화</th>
-                        <th>수</th>
-                        <th>목</th>
-                        <th>금</th>
-                        <th>토</th>
-                        <th>일</th>
-                    </tr>
-                </thead>
-                <tbody>
+        <div id ="calender">
+            <table id="day">
+                <%-- <tr>
                     <td><a>1</a></td>
-
-
+                    <td><a>2</a></td>
+                    <td><a>3</a></td>
+                    <td><a>4</a></td>
+                    <td><a>5</a></td>
+                    <td><a>6</a></td>
+                    <td><a>7</a></td>
+                </tr>
+                <tr>
+                    <td><a>1</a></td>
+                    <td><a>2</a></td>
+                    <td><a>3</a></td>
+                    <td><a>4</a></td>
+                    <td><a>5</a></td>
+                    <td><a>6</a></td>
+                    <td><a>7</a></td>
+                </tr> --%>
+            </table>
         </div>
     </div>
-    <script src="../js/calenderJs.js"></script>
+    <script src="../js/calender.js"></script>
 </body>
