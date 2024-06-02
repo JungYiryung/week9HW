@@ -12,15 +12,15 @@
     </div>
 
     <div class="inputBox">
-        <form  class="form" action="./action/loginAction.jsp">
+        <form  id="loginForm" class="form" action="./action/loginAction.jsp">
             <div>
-                <input type="text" name="idValue" class="inputText" placeholder="아이디">
+                <input type="text" id="idValue" name="idValue" class="inputText" placeholder="아이디">
             </div>
             <div>
-                <input type="password" name="pwValue" class="inputText" placeholder="비밀번호">
+                <input type="password" id="pwValue" name="pwValue" class="inputText" placeholder="비밀번호">
             </div>
             <div>
-                <input type="submit" class="loginButton" value="로그인">
+                <input type="button" class="loginButton" value="로그인" onclick="loginExceptionEvent()">
             </div>
         </form>
         

@@ -1,0 +1,4 @@
+.planField{
+    display: flex;
+    flex-direction: column;
+}

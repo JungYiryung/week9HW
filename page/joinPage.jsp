@@ -25,7 +25,7 @@
     </div> --%>
 
     <div class="inputBox">
-        <form  class="form" action="../action/loginAction.jsp">
+        <form  id="joinForm" action="../action/joinAction.jsp">
             <table>
                 <tr>
                     <td><label>아이디<span>*</span></label></td>
@@ -51,7 +51,7 @@
                 <tr>
                     <td><label>직책<span>*</span></label></td>
                     <td>
-                        <select  class="inputText">
+                        <select name="role" class="inputText">
                             <option value="teamMember">팀원</option>
                             <option value="teamLeader">팀장</option>
                         </select>
@@ -60,14 +60,15 @@
                 <tr>
                     <td><label>부서<span>*</span></label></td>
                     <td>
-                        <select  class="inputText">
-                            <option value="planingTeam">기획팀</option>
+                        <select name="department" class="inputText" >
+                            <option value="planningTeam">기획팀</option>
                             <option value="hrTeam">인사팀</option>
                         </select>
                     </td>
                 </tr>
             </table>
             <input type="button" class="joinButton" value="회원가입" onclick="joinExceptionEvent()">
+            <%-- <input type="submit" class="joinButton" value="회원가입" > --%>
         </form>
     </div>
     <script src="../js/joinPage.js"></script>

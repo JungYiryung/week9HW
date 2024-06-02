@@ -9,7 +9,8 @@ function joinExceptionEvent(){
     let pwValueCheck = document.querySelector('#pwValueCheck');
     let nameValue = document.querySelector('#nameValue');
     let phoneValue = document.querySelector('#phoneValue');
-    //console.log(idValue.value);
+    let roleValue = document.getElementsByName("role")[0].value
+    let departmentValue = document.getElementsByName("department")[0].value
     const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
     const passwordRegex = /^[a-zA-x0-9]{2,20}$/;
     const nameRegex = /^[가-힣]{2,5}$/;
@@ -19,35 +20,33 @@ function joinExceptionEvent(){
     {
         alert("아이디를 다시 입력하세요!");
     }
-    if( !((passwordRegex.test(pwValue.value) || 
+    else if( !((passwordRegex.test(pwValue.value) || 
     passwordRegex.test(pwValueCheck.value))) )
     {
-        alert("비밀번호를 다시 입력하세요!");
+        alert("영대소문자와 숫자 조합 비밀번호를 다시 입력하세요!");
     }
-    if(pwValue.value != pwValueCheck.value)
+    else if(pwValue.value != pwValueCheck.value)
     {
         alert("비밀번호와 비밀번호확인칸이 같지 않습니다!");
     }
-    if( !nameRegex.test(nameValue.value))
+    else if( !nameRegex.test(nameValue.value))
     {
         alert("이름을 다시 입력하세요!");
     }
-    if( !phoneRegex.test(phoneValue.value))
+    else if( !phoneRegex.test(phoneValue.value))
     {
         alert("핸드폰번호를 다시 입력하세요!");
     }
-
-    //document.getElementById("form").submit()
+    else if( roleValue != 'teamMember' && roleValue !='teamLeader')
+    {
+        alert("팀장,팀원중 선택해주세요")
+    }
+    else if( departmentValue !='planningTeam'&& departmentValue !='hrTeam')
+    {
+        alert("기획팀, 인사팀 중 선택해주세요")
+    }
+    else {
+        document.getElementById("joinForm").submit()
+    }
 }
 
-
-
-//예외처리를 해주려면 
-// const IDCheckButton = document.querySelector('IDCheckButton');
-// const useButton = document.querySelector('useButton');
-// const xButton = document.querySelector('xButton');
-// const modal = document.getElementById('modal');
-
-// IDCheckButton.addEventListener('click', () => {
-//     modal.classList.add('show');
-// });
